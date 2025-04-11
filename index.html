@@ -32,7 +32,30 @@
           <li class="nav-address-item"><a href="tel:+110001111111" class="contact">+11 (000) 111-11-11</a></li>
         </ul>
       </address>
+
+      <button 
+      class="burger-btn"
+      type="button" data-menu-open>
+        <svg class="burger-icon" 
+        width="24"
+        height="24">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+      </button>
     </div>
+
+<div class="hidden" class="mobile-menu" data-menu>
+  <div class="container mobile-menu-container">
+  <button class="mobile-menu-close" data-menu-close></button>
+  <nav class="mobile-menu-nav">Navigation</nav>
+  <address>Address</address>
+  <div>Soc Link</div>
+</div>
+</div>
+
+
+
+
     </header>
 
     <main>
@@ -324,7 +347,10 @@
       </section>
     </main>
 
-    <footer class="footer">
+
+
+
+    <footer  class="footer">
       <div class="container footer-container">
         <div class="footer-descr">
       <a href="./index.html" class="logo-footer web-logo">WEB<span class="studio-logo">Studio</span></a>
@@ -375,7 +401,7 @@
     </footer>
 
 
-<div class="backdrop is-open" data-modal>
+<div  class="backdrop is-open" data-modal>
 <div class="modal">
 <button type="button" class="modal-close-btn" data-modal-close>
   <svg class="button-close-icon" width="8" height="8">
@@ -438,6 +464,8 @@ id="user-privacy"
 </form>
 </div>
 </div>
+
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
   </body>
 </html>
