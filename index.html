@@ -44,18 +44,91 @@
       </button>
     </div>
 
-<div class="hidden" class="mobile-menu" data-menu>
+
+<div class="mobile-menu is-open" data-menu>
   <div class="container mobile-menu-container">
-  <button class="mobile-menu-close" data-menu-close></button>
-  <nav class="mobile-menu-nav">Navigation</nav>
-  <address>Address</address>
-  <div>Soc Link</div>
+    <button
+      type="button"
+      class="menu-close-btn" data-menu-close>
+      <svg class="mobmenu-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-icon-close"></use>
+      </svg>
+    </button>
+    <nav>
+      <ul class="mob-menu-list">
+        <li class="mob-menu-item">
+          <a
+            class="mob-menu-link current"
+            href=""
+            >Studio</a
+          >
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-menu-link"
+            href="#made"
+            >Portfolio</a
+          >
+        </li>
+        <li class="mob-menu-item">
+          <a
+            class="mob-menu-link"
+            href=""
+            >Contacts</a
+          >
+        </li>
+      </ul>
+    </nav>
+  
+  <div class="mob-menu-bottom">
+  <address class="mob-menu-address">
+    <ul class="mob-address-list">
+      <li class="mob-address-item">
+        <a class="mob-address-link current"href="mailto:info@devstudio.com" 
+        class="contact">info@devstudio.com</a></li>
+      <li class="mob-address-item">
+        <a class="mob-address-link" href="tel:+110001111111" 
+        class="contact">+11 (000) 111-11-11</a></li>
+    </ul>
+  </address>
+  <div><ul class="mob-soc-list">
+    <li class="mob-soc-item">
+      <a
+        class="mob-soc-link"
+        href=""
+        ><svg
+          class="mob-soc-icon"
+          width="24"
+          height="24"
+        >
+          <use href="./images/icons.svg#icon-instagram1"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="mob-soc-item">
+      <a
+        class="mob-soc-link"
+        href=""
+        ><svg
+          class="mob-soc-icon"
+          width="24"
+          height="24"
+        >
+          <use href="./images/icons.svg#icon-twitter2"></use></svg
+      ></a>
+    </li>
+    <li class="mob-soc-item"><a href="" class="mob-soc-link"> 
+      <svg class="mob-soc-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-facebook3"></use>
+    </svg></a></li>
+    <li class="mob-soc-item"><a href="" class="mob-soc-link"> 
+      <svg class="mob-soc-icon" width="24" height="24">
+      <use href="./images/icons.svg#icon-linkedin4"></use>
+    </svg></a></li>
+  </ul></div>
 </div>
 </div>
-
-
-
-
+</div>
     </header>
 
     <main>
@@ -123,6 +196,7 @@
           </li>
         </ul>
       </div>
+      </div>
       </section>
 
 
@@ -186,8 +260,12 @@
           </li>
 
           <li class="members">
-            <img srcset="./images/team/member3-min.jpg 1x, ./images/team/member3@2x-min.jpg 2x"
-            src="./images/img3.jpg" alt="third member" width="264" />
+            <img srcset="./images/team/member3-min.jpg 1x, 
+            ./images/team/member3@2x-min.jpg 2x"
+            src="./images/img3.jpg" 
+            alt="third member" 
+            width="264" 
+            />
             <div class="text-members">
             <h3 class="name">Camila Garcia</h3>
             <p class="member-descr">Marketing</p>
@@ -213,8 +291,12 @@
           </li>
 
           <li class="members">
-            <img srcset="./images/team/member4-min.jpg 1x, ./images/team/member4@2x-min.jpg 2x"
-            src="./images/img4.jpg" alt="forth member" width="264" />
+            <img srcset="./images/team/member4-min.jpg 1x, 
+            ./images/team/member4@2x-min.jpg 2x"
+            src="./images/img4.jpg" 
+            alt="forth member" 
+            width="264" 
+            />
           <div class="text-members">
             <h3 class="name">Daniel Wilson</h3>
             <p class="member-descr">UI Designer</p>
@@ -570,8 +652,9 @@ id="user-privacy"
     <svg class="modal-checkbox-icon" width="10" height="8" >
       <use href="./images/icons.svg#icon-checkbox"></use>
     </svg></span>
-    I accept the terms and conditions of the <a class="modal-link"
-     href=""> Privacy Policy</a></label>
+   <span class="mobile-check-span">I accept the terms and conditions of the 
+    <a class="modal-link"
+     href=""> Privacy Policy</a></label></span>
 </div>
 <button type="submit" class="button modal-send-btn">Send</button>
 </form>
