@@ -1170,7 +1170,7 @@ text-align: left;
     flex-wrap: nowrap;
     align-items: baseline;
     max-width: 1158px;
-
+    justify-content: center;
 }
 
 
