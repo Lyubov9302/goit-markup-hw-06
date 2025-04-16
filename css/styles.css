@@ -35,6 +35,7 @@ body {
     height: auto;
     }
 
+
     button {
         cursor: pointer;
     }
@@ -323,7 +324,6 @@ display: flex;
 border: 1px solid rgba(0, 0, 0, 0.1);
 padding: 0;
 cursor: pointer;
-
 }
 
 
@@ -632,13 +632,13 @@ width: 100%;
 
     .qualities {
         padding: 120px 0;
-        max-width: 1128px;
+        max-width: 1158px;
         margin: 0 auto;
         }
 
     .qual-list {
         display: flex;
-        justify-content: space-between;
+        flex-wrap: nowrap;
         gap: 24px;
         }
     
@@ -920,7 +920,7 @@ fill: #f4f4fd;
 @media screen and (min-width: 1158px) {
     .portfolio {
         padding: 120px 0;
-        max-width: 1128px;
+        max-width: 1158px;
     }
 
     .portfolio-list {
@@ -1127,34 +1127,27 @@ text-align: left;
 }
 
 .footer {
-  
+   padding-left: 108px;
 }
-
 .footer-container {
     display: flex;
     flex-direction: row;
     gap: 72px 24px;
-    max-width: 768px;
-    justify-content: left;
-    
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: normal;
 }
-
-
 .form-footer {
     flex-direction: row;
     gap: 24px;
-    display: flex;
-    
+    display: flex;  
 }
-
 .text-footer {
     width: 264px;
-  
-}
 
+}
 .subscribe-input {
-    width: 264px;
- 
+  width: 264px;
 }
 
 }
@@ -1167,25 +1160,28 @@ text-align: left;
 
 .footer-container {
     display: flex;
-    flex-wrap: nowrap;
-    align-items: baseline;
     max-width: 1158px;
-    justify-content: center;
+    padding: 0 15px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: normal;
+    gap: 0;
 }
-
 
 .footer-descr {
+    max-width: 264px;
+    flex-shrink: 0;
     margin-right: 120px;
-}
-
-.form-footer {
-   
 }
 
 .footer-icons-container {
     margin-right: 80px;
 }
 
+.form-footer {
+   
+}
 
 }
 
