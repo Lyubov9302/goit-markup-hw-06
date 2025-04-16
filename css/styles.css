@@ -145,6 +145,10 @@ fill: #2f2f37;
 display: none;
 }
 
+
+ .container {
+    max-width: 768px;
+}
     .nav-list {
     display: flex;
     align-items: center;
@@ -235,6 +239,11 @@ display: none;
          .logo-web {
             margin-right: 76px;
          }
+
+
+    .header .container {
+        max-width: 1158px;
+        }
 
          .nav-address-list {
             flex-direction: row;
@@ -433,7 +442,8 @@ margin-bottom: 24px;
         }
     }
 
-    .start-title {
+   .start-page .start-title {
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.11;
         text-align: center;
@@ -466,12 +476,18 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {  
 .start-page {
     padding: 122px 0;
-    max-width: 768px;
+        max-width: 768px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
          rgba(46, 47, 66, 0.7)
          ),
-         url(../images/hero-bg-tab.jpg);
+      url(../images/hero-bg-tab.jpg);
+
+    
+}
+
+ .container {
+        max-width: 768px;  
 }
 }
 
@@ -513,7 +529,13 @@ max-width: 496px;
          rgba(46, 47, 66, 0.7)
          ),
          url(../images/mainbg.jpg);
+        }
+
+       .start-page .container {
+            max-width: 1158px;  
+            padding: 0 15px;
     }
+
 }
 
     @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
@@ -598,6 +620,10 @@ width: 100%;
         margin: 0 auto;
     }
     
+     .container {
+        max-width: 768px;
+    }
+
     .qual-list {
      display: flex;
      flex-wrap: wrap;
@@ -629,10 +655,12 @@ width: 100%;
         margin-bottom: 8px;
     }
 
+.qualities .container {
+    max-width: 1158px;
+}
 
     .qualities {
         padding: 120px 0;
-        max-width: 1158px;
         margin: 0 auto;
         }
 
@@ -696,7 +724,7 @@ width: 100%;
 .members {
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;  
-    width: 100%;
+    max-width: 264px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
      0px 1px 1px rgba(46, 47, 66, 0.16),
       0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -774,12 +802,17 @@ fill: #f4f4fd;
 
 @media screen and (min-width: 768px) {
 .our-team {
-    margin: 0 auto;
+  margin: 0 auto;  
+}
 
-   
+ .container {
+    max-width: 768px;
 }
 
 .our-team-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 64px 24px;
 }
 
@@ -795,6 +828,9 @@ fill: #f4f4fd;
         padding: 120px 0;
     }
 
+    .our-team .container {
+        max-width: 1158px;
+    }
 
     .our-team-list {
         gap: 24px;
@@ -898,8 +934,11 @@ fill: #f4f4fd;
 @media screen and (min-width: 768px) {
 
     .portfolio {
-        max-width: 736px;
         margin: 0 auto;
+    }
+
+    .container {
+        max-width: 768px;
     }
 
     .portfolio-list {
@@ -920,8 +959,12 @@ fill: #f4f4fd;
 @media screen and (min-width: 1158px) {
     .portfolio {
         padding: 120px 0;
-        max-width: 1158px;
+    
     }
+
+.portfolio .container {
+    max-width: 1158px;
+}
 
     .portfolio-list {
         row-gap: 48px;
