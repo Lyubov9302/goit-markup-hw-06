@@ -1136,11 +1136,13 @@ text-align: left;
     justify-content: flex-start;
     flex-wrap: wrap;
     align-items: normal;
+    margin: 0 auto;
 }
 .form-footer {
+    display: flex;  
     flex-direction: row;
     gap: 24px;
-    display: flex;  
+   
 }
 .text-footer {
     width: 264px;
