@@ -722,6 +722,7 @@ width: 100%;
 }
 
 .members {
+    margin: 0 auto;
     background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;  
     max-width: 264px;
